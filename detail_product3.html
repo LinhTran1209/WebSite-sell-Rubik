@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sản phẩm 3</title>
+        <!-- type font chữ -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/index.css">
+        <link rel="stylesheet" href="./assets/css/modal_login_register.css">
+        <link rel="stylesheet" href="./assets/css/detail_product.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.5.2-web/css/all.min.css">
+
+
+        <!-- JS -->
+        <script src="./assets/js/jquery-3.7.1.js"></script>
+        <script src="./assets/js/Scroll.js"></script>
+        <script src="./assets/js/modal_register_login.js"></script>
+        <script src="./assets/js/middle__header.js"></script>
+        <script src="./assets/js/detail_product.js"></script>
+        <script src="./assets/js/cart.js"></script>
+    </head>
+    
+    <body>
+        <div id="top-app" class="app">
+            <!-- ------------------------------------------------------HEADER---------------------------------------------------------------- -->
+            <header class="header">
+                <div class="header__top">
+                    <a class="header__top-logo" href="index.html">
+                        <img id="logo" src="./assets/img/logo.png" alt="">
+                    </a>
+                    <div class="search-site">
+                        <input class="text-search" type="text"  value placeholder="Tìm kiếm sản phẩm...">
+                        <button class="btn-search">
+                            <i class="fa-solid fa-magnifying-glass" style=" background-color: white; color: black;"></i>
+                        </button>
+                    </div>
+                    <div class="header__top-contact">
+                        <a class="header__top-a" href="">
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <span >
+                                <span>0344665810</span><br>
+                                <span>Hotline bán hàng</span>
+                            </span>
+                        </a>                          
+                    </div>
+
+                    <div class="header__top-user">
+                        <a class="header__top-a" href="">
+                            <i class="fa-solid fa-user"></i>
+                            <div>
+                                <a class="a-register-login" href="login.html">Đăng nhập</a><br>
+                                <a class="a-register-login" href="register.html">Đăng ký</a>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="header__top-cart">
+                        <a class="header__top-a" href="cart.html">
+                            <span id="count-in-cart">0</span>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span style="line-height: 33px;">Giỏ hàng</span>
+                        </a>
+                        <div class="detail-cart">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header__bottom">
+                    <ul id="txt-banner">
+                        <li>
+                            <div id="all-li1">
+                                <div id="line">
+                                    <i class="line-i"></i>
+                                    <i class="line-i"></i>
+                                    <i class="line-i"></i>
+                                </div>
+                                <a id="category" href="">DANH MỤC SẢN PHẨM</a>
+
+                                <ul id="txt-banner-category">
+                                    <li id="rubik-basic">
+                                        <img class="icon-rubik" src="./assets/img/cube-3x3.png" alt="">
+                                        <a id="a-rubik-basic" href="">Rubik cơ bản</a>
+
+                                        <ul id="txt-banner-rubik-basic">
+                                            <li class=""><a href="rubik2x2x2.html">Rubik 2x2x2</a></li>
+                                            <li class=""><a href="">Rubik 3x3x3</a></li>
+                                            <li class=""><a href="">Rubik 4x4x4</a></li>
+                                            <li class=""><a href="">Rubik 5x5x5</a></li>
+                                            <li class=""><a href="">Rubik 6x6x6</a></li>
+                                            <li class=""><a href="">Rubik 7x7x7</a></li>
+                                            <li class=""><a href="">Rubik 8x8x8</a></li>
+                                            <li class=""><a href="">Rubik 9x9x9</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="rubik-variant">
+                                        <img class="icon-rubik" src="./assets/img/cube-megaminx.png" alt="">
+                                        <a id="a-rubik-variant" href="">Rubik biến thể</a>
+
+                                        <ul id="txt-banner-rubik-variant">
+                                            <li class=""><a href="">Rubik Biến Thể 4 Mặt</a></li>
+                                            <li class=""><a href="">Rubik Biến Thể 6 Mặt</a></li>
+                                            <li class=""><a href="">Rubik Biến Thể 12 Mặt</a></li>
+                                            <li class=""><a href="">Rubik Biến Thể Khác</a></li>
+                                            <li class=""><a href="">Rubik Biến Thể Cao Cấp</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="rubik-combo">
+                                        <img class="icon-rubik" src="./assets/img/cube-3x3.png" alt="">
+                                        <a id="a-rubik-combo" href="">Combo Rubik</a>
+                                    </li>
+                                    <li id="rubik-accessory">
+                                        <img class="icon-rubik" src="./assets/img/cube-3x3.png" alt="">
+                                        <a id="a-rubik-accessory" href="">Phụ kiện Rubik</a>
+
+                                        <ul id="txt-banner-rubik-accessory">
+                                            <li class=""><a href="">Stickers - Đề can dán rubik</a></li>
+                                            <li class=""><a href="">Core & Ốc</a></li>
+                                            <li class=""><a href="">Silicone - Dầu bôi trơn</a></li>
+                                            <li class=""><a href="">Đồng hồ bấm giờ Rubik - Thảm kê Rubik</a></li>
+                                            <li class=""><a href="">Keychain - Móc khóa Rubik</a></li>
+                                            <li class=""><a href="">Bag - Túi đựng Rubik</a></li>
+                                            <li class=""><a href="">Stand - Đế Rubik</a></li>
+                                            <li class=""><a href="">Logo Rubik các hãng</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="rubik-spiner">
+                                        <img class="icon-rubik" src="./assets/img/cube-spiner.png" alt="">
+                                        <a id="a-rubik-spiner" href="">Spiner - Figdet</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="index.html">TRANG CHỦ</a></li>
+                        <li><a href="introduce.html">GIỚI THIỆU</a></li>
+                        <li><a href="news.html">TIN TỨC</a></li>
+                        <li><a href="manualRubik.html">HƯỚNG DẪN CHƠI</a></li>
+                        <!-- <li><a href="">MUA HÀNG</a></li> -->
+                        <li><a id="to-contact" href="#all-contact">LIÊN HỆ</a></li>
+                    </ul>
+                </div>
+            </header>
+            <!-- -----------------------------------------------------------------------MIDDLE---------------------------------------------------------------------- -->
+            <div class="middle">
+                <div class="all__section">
+                    <div class="all__section-header">
+                        <span class="all__section-header-text">Trang chủ</span>
+                        <span class="all__section-header-text">Rubik cơ bản</span>
+                        <span class="all__section-header-text">Rubik 3x3x3</span>
+                        <span>Rubik Gan 356 RS stickerless 3x3x3 (SP004254)</span>
+                    </div>
+
+                    <div class="all__section-main">
+                        <div class="__product">
+                            <div class="img__product">
+                                <div class="img__product-big">
+                                    <img id="id-img-product-big" class="img-product-big" src="./assets/img-detail-product/product6.jpg" alt="">
+                                </div>
+
+                                <div class="img__product-small">
+                                    <div class="img__product-small-all">
+                                        <img onclick="click_img_small('./assets/img-detail-product/product6.jpg')"  class="img-product-small" src="./assets/img-detail-product/product6.jpg" alt="">
+                                        <!-- <img class="img-product-small" src="./assets/img-detail-product/product4.jpg" alt="">
+                                        <img class="img-product-small" src="./assets/img-detail-product/product5.jpg" alt=""> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info__product">
+                                <div class="info__product-title">
+                                    <span>Rubik Gan 356 RS stickerless 3x3x3 (SP004254)</span>
+                                </div>
+
+                                <div class="info__product-more">
+                                    <div class="info__product-price">
+                                        <span>Giá:</span>
+                                        <strong>350.000₫</strong>
+                                        <span>525.000₫</span>
+                                    </div>
+
+                                    <div style="margin: 20px 0;">
+                                        <span>ƯU ĐÃI KHUYẾN MÃI</span>
+                                    </div>
+
+                                    <DIV class="icon__freeship">
+                                        <span id="icon-freeship">Freeship đơn hàng từ 200.000 đ</span>
+                                    </DIV>
+
+                                    <div class="info__product-color">
+                                        <span style="margin-right: 30px;">Màu sắc:</span>
+                                        <button onclick="btn_color('btn-product-color-stickerless')" id="btn-product-color-stickerless" class="btn-product-color">Stickerless</button>
+                                        <!-- <button onclick="btn_color('btn-product-color-den')" id="btn-product-color-den" class="btn-product-color">Đen</button> -->
+                                    </div>
+
+                                    <div class="info__product-quantity">
+                                        <span style="margin-right: 25px;">Số lượng:</span>
+                                        <button onclick="sub_product(this)" id="reduce-product">-</button>
+                                        <input type="text" name="" id="quantity-product" value="1" data-product-id = "quantity-product">
+                                        <button onclick="add_product(this)" id="increase-product">+</button>
+                                    </div>
+
+                                    <button id="btn-add-product-tocart">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product__describle">
+                            <p style="font-weight: bold;white-space: normal;">Rubik Gan 356 RS stickerless 3x3x3 (SP004254)</p>
+                            <p style="font-weight: bold;margin-left: 20px;">- Tên sản phẩm: GAN RS 3X3X3</p>
+                            <p style="margin-left: 20px; padding-bottom: 20px;">
+                                <span>- Hãng sản xuất: GAN</span> <br>
+                                <span>- Vật chất: Nhựa ABS</span> <br>
+                                <span>- Kích thước (tính bằng mm): 56 x 56 x 56</span> <br>
+                                <span>- Trọng lượng sản phẩm (tính bằng gam): 98g</span> <br>
+                                <span>- Là một sản phẩm đến từ hãng sản xuất rubik GAN cao cấp. Phiên bản GAN RS với cấu trúc mới nhất từ hãng, bề mặt được trang bị toàn bộ theo cấu trúc tổ ong, giúp tăng khả năng speed cho Rubik Gan 356 RS</span> <br>
+                                <span>- Lực hút nam châm nhẹ đến vừa</span> <br>
+                                <span>- Bảng màu: Tiêu chuẩn</span> <br>
+                                <span>- Xoay êm, không rít, không kẹt</span> <br>
+                                <span>-  Core cũng được thay bằng core nhựa, làm giảm trọng lượng cube. Có thể điều chỉnh tension, độ nén lò xo bằng tay (2 mức: 0,6 và 0,8)</span> <br>
+                                <span>- Phụ kiện: tua vít, giấy công thức, GES dự phòng đi kèm</span> <br>
+                                <span style="color: rgb(23, 159, 254); cursor: pointer;">#ganRS #rubik3x3 #rubiknamcham #rubik3x3namcham</span> <br>
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+            </div>
+             <!-- -----------------------------------------------------------------------FOOTER ------------------------------------------------------------------------>
+            <div id="all-contact" class="footer">
+                <div class="footer__left">
+                    <p><strong>CÔNG TY TNHH RUBIK OCEAN VIỆT NAM</strong></p>
+                    <p>Hotline: <strong>0344665810</strong></p>
+                    <p>Tel : 02466863684 - 0836561578 - 0903244145</p>
+                    <p><strong>-Hà Nội</strong>: Tầng 6, Ocean Kids-Royal Tea, Số 6 Dương Đình Nghệ, Cầu Giấy, Hà Nội</p>
+                    <p><strong>-Hưng Yên</strong>: Trịnh Mỹ, Ngô Quyền, Tiên Lữ, Hưng Yên</p>
+                    <p>Email: linh3789@gmail.com</p>
+                    <p>GPKD số 0106475927 do Sở Kế hoạch đầu tư Hà Nội cấp ngày 06/03/2014 - MST: 0106475927</p>
+                    <li class="social-link">
+                        <a class="a-img-contact" href="">
+                            <img class="img-contact" src="./assets/img/facebook.png" alt="">
+                        </a>
+                        <a class="a-img-contact" href="">
+                            <img class="img-contact" src="./assets/img/messager.png" alt="">
+                        </a>
+                        <a class="a-img-contact" href="">
+                            <img class="img-contact" src="./assets/img/zalo.png" alt="">
+                        </a>
+                        <a class="a-img-contact" href="">
+                            <img class="img-contact" src="./assets/img/youtube.png" alt="">
+                        </a>
+                        <a class="a-img-payment" href="">
+                            <img class="img-payment" src="./assets/img/payment.png" alt="">
+                        </a>
+                    </li>
+                </div>
+    
+
+                <div class="footer__middle">
+                    <ul>
+                        <li id="footer__middle-title">Thông Tin Công Ty</li>
+                        <li><a href="">Chính sách bảo mật thông tin</a></li>
+                        <li><a href="">Giới thiệu</a></li>
+                        <li><a href="">Điều khoản sử dụng</a></li>
+                        <li><a href="">Trung tâm bảo hành</a></li>
+                        <li><a href="">Liên hệ, góp ý</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer__right">
+                    <ul>
+                        <li id="footer__middle-title">Hỗ trợ khách hàng</li>
+                        <li><a href="">Chính sách đổi trả hàng</a></li>
+                        <li><a href="">Chính sách bảo hành</a></li>
+                        <li><a href="">Phương thức thanh toán</a></li>
+                        <li><a href="">Giao nhận và vận chuyển</a></li>
+                        <li><a href="">Câu hỏi thường gặp</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- -------------------------------------------------------------------------SUPPORT---------------------------------------------------------------------------- -->
+
+        <div id="support">
+            <a class="a-img-support" title="Fanpage" href="">
+                <img id="icon-support-fb" class="img-support" src="./assets/img/facebook.png" alt="">
+            </a>
+            <a class="a-img-support" title="Chat Messenger" href="">
+                <img id="icon-support-msg" class="img-support" src="./assets/img/messager.png" alt="">
+            </a>
+            <a class="a-img-support" title="Chat Zalo" href="">
+                <img id="icon-support-zl" class="img-support" src="./assets/img/zalo.png" alt="">
+            </a>
+        </div>
+
+        <a href="#app" rel="nofollow" id="back-top" title="Lên đầu trang" style="display: none;">↑</a>
+
+        
+        
+    </body>
+</html>

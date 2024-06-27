@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rubik 2x2x2</title>
+        <!-- type font chữ -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/index.css">
+        <link rel="stylesheet" href="./assets/css/modal_login_register.css">
+        <link rel="stylesheet" href="./assets/css/rubik2x2x2.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.5.2-web/css/all.min.css">
+
+
+        <!-- JS -->
+        <script src="./assets/js/jquery-3.7.1.js"></script>
+        <script src="./assets/js/Scroll.js"></script>
+        <script src="./assets/js/modal_register_login.js"></script>
+        <script src="./assets/js/middle__header.js"></script>
+    </head>
+    
+    <body>
+        <div id="top-app" class="app">
+            <!-- ------------------------------------------------------HEADER---------------------------------------------------------------- -->
+            <header class="header">
+                <div class="header__top">
+                    <a class="header__top-logo" href="index.html">
+                        <img id="logo" src="./assets/img/logo.png" alt="">
+                    </a>
+                    <div class="search-site">
+                        <input class="text-search" type="text"  value placeholder="Tìm kiếm sản phẩm...">
+                        <button class="btn-search">
+                            <i class="fa-solid fa-magnifying-glass" style=" background-color: white; color: black;"></i>
+                        </button>
+                    </div>
+                    <div class="header__top-contact">
+                        <a class="header__top-a" href="">
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <span >
+                                <span>0344665810</span><br>
+                                <span>Hotline bán hàng</span>
+                            </span>
+                        </a>                          
+                    </div>
+
+                    <div class="header__top-user">
+                        <a class="header__top-a" href="">
+                            <i class="fa-solid fa-user"></i>
+                            <div>
+                                <a class="a-register-login" href="login.html">Đăng nhập</a><br>
+                                <a class="a-register-login" href="register.html">Đăng ký</a>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="header__top-cart">
+                        <a class="header__top-a" href="cart.html">
+                            <span id="count-in-cart">0</span>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span style="line-height: 33px;">Giỏ hàng</span>
+                        </a>
+                        <div class="detail-cart">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header__bottom">
+                    <ul id="txt-banner">
+                        <li>
+                            <div id="all-li1">
+                                <div id="line">
+                                    <i class="line-i"></i>
+                                    <i class="line-i"></i>
+                                    <i class="line-i"></i>
+                                </div>
+                                <a id="category" href="">DANH MỤC SẢN PHẨM</a>
+
+                                <ul id="txt-banner-category">
+                                    <li id="rubik-basic">
+                                        <img class="icon-rubik" src="./assets/img/cube-3x3.png" alt="">
+                                        <a id="a-rubik-basic" href="">Rubik cơ bản</a>
+
+                                        <ul id="txt-banner-rubik-basic">
+                                            <li class=""><a href="">Rubik 2x2x2</a></li>
+                                            <li class=""><a href="">Rubik 3x3x3</a></li>
+                                            <li class=""><a href="">Rubik 4x4x4</a></li>
+                                            <li class=""><a href="">Rubik 5x5x5</a></li>
+                                            <li class=""><a href="">Rubik 6x6x6</a></li>
+                                            <li class=""><a href="">Rubik 7x7x7</a></li>
+                                            <li class=""><a href="">Rubik 8x8x8</a></li>
+                                            <li class=""><a href="">Rubik 9x9x9</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="rubik-variant">
+                                        <img class="icon-rubik" src="./assets/img/cube-megaminx.png" alt="">
+                                        <a id="a-rubik-variant" href="">Rubik biến thể</a>
+
+                                        <ul id="txt-banner-rubik-variant">
+                                            <li class=""><a href="">Rubik Biến Thể 4 Mặt</a></li>
+                                            <li class=""><a href="">Rubik Biến Thể 6 Mặt</a></li>
+                                            <li class=""><a href="">Rubik Biến Thể 12 Mặt</a></li>
+                                            <li class=""><a href="">Rubik Biến Thể Khác</a></li>
+                                            <li class=""><a href="">Rubik Biến Thể Cao Cấp</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="rubik-combo">
+                                        <img class="icon-rubik" src="./assets/img/cube-3x3.png" alt="">
+                                        <a id="a-rubik-combo" href="">Combo Rubik</a>
+                                    </li>
+                                    <li id="rubik-accessory">
+                                        <img class="icon-rubik" src="./assets/img/cube-3x3.png" alt="">
+                                        <a id="a-rubik-accessory" href="">Phụ kiện Rubik</a>
+
+                                        <ul id="txt-banner-rubik-accessory">
+                                            <li class=""><a href="">Stickers - Đề can dán rubik</a></li>
+                                            <li class=""><a href="">Core & Ốc</a></li>
+                                            <li class=""><a href="">Silicone - Dầu bôi trơn</a></li>
+                                            <li class=""><a href="">Đồng hồ bấm giờ Rubik - Thảm kê Rubik</a></li>
+                                            <li class=""><a href="">Keychain - Móc khóa Rubik</a></li>
+                                            <li class=""><a href="">Bag - Túi đựng Rubik</a></li>
+                                            <li class=""><a href="">Stand - Đế Rubik</a></li>
+                                            <li class=""><a href="">Logo Rubik các hãng</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="rubik-spiner">
+                                        <img class="icon-rubik" src="./assets/img/cube-spiner.png" alt="">
+                                        <a id="a-rubik-spiner" href="">Spiner - Figdet</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="index.html">TRANG CHỦ</a></li>
+                        <li><a href="introduce.html">GIỚI THIỆU</a></li>
+                        <li><a href="news.html">TIN TỨC</a></li>
+                        <li><a href="manualRubik.html">HƯỚNG DẪN CHƠI</a></li>
+                        <!-- <li><a href="">MUA HÀNG</a></li> -->
+                        <li><a id="to-contact" href="#all-contact">LIÊN HỆ</a></li>
+                    </ul>
+                </div>
+            </header>
+            <!-- -----------------------------------------------------------------------MIDDLE---------------------------------------------------------------------- -->
+            <div class="middle">
+                <div class="all__section">
+                    <div class="all__section-header">
+                        <span class="all__section-header-text">Trang chủ</span>
+                        <span class="all__section-header-text">Rubik cơ bản</span>
+                        <span>Rubik 2x2x2</span>
+                    </div>
+                    <div class="all__section-col-main">
+                        <div class="all-section-select">
+                            <a href="rubik2x2x2.html">Rubik 2x2x2</a>
+                            <a href="">Rubik 3x3x3</a>
+                            <a href="">Rubik 4x4x4</a>
+                            <a href="">Rubik 5x5x5</a>
+                            <a href="">Rubik 6x6x6</a>
+                            <a href="">Rubik 7x7x7</a>
+                            <a href="">Rubik 8x8x8</a>
+                            <a href="">Rubik 9x9x9</a>
+                        </div>
+
+                        <div class="all__section-title">
+                            <h1>RUBIK 2x2x2</h1>
+                        </div>
+
+                        <div class="all__setion-describe">
+                            <p>
+                                Rubik 2x2x2 Chính hãng - Rubik 2x2x2,
+                                hay còn được gọi là Pocket Cube (Rubik bỏ túi) hoặc Mini Cube, là phiên bản 2 tầng của 
+                                Rubik 3x3x3... Một khối Rubik bỏ túi có thể giải quyết bằng các phương thức tương tự như 3x3x3, 
+                                tuy nhiên công thức sử dụng thường ngắn gọn hơn và nhanh chóng đáng kể
+                            </p>
+                        </div>
+
+                        <div class="all__products">
+                            <div class="products">
+                                <ul class="homeproducts">
+                                    <li class="item-product">
+                                        <a href="">
+                                           <img src="./assets/img-products/img-product-Rubik-2x2x2/product1.jpg" alt="" class="img-item-product">
+                                           <h3>Rubik GAN 251 M AIR 2x2 có nam châm cao cấp</h3>
+                                           <div class="price-item-product">
+                                                <strong>450.000₫</strong>
+                                                <span>550.000₫</span>
+                                           </div> 
+                                        </a>
+                                    </li>
+                                    <li class="item-product">
+                                        <a href="">
+                                           <img src="./assets/img-products/img-product-Rubik-2x2x2/product2.jpg" alt="" class="img-item-product">
+                                           <h3>Rubik GAN 251 M PRO 2x2x2 stickerless có nam châm cao cấp</h3>
+                                           <div class="price-item-product">
+                                                <strong>520.000₫</strong>
+                                                <span>600.000₫</span>
+                                           </div> 
+                                        </a>
+                                    </li>
+                                    <li class="item-product">
+                                        <a href="">
+                                           <img src="./assets/img-products/img-product-Rubik-2x2x2/product3.jpg" alt="" class="img-item-product">
+                                           <h3>Rubik Gan 251 V2 2x2 Stickerless</h3>
+                                           <div class="price-item-product">
+                                                <strong>390.000₫</strong>
+                                                <span>450.000₫</span>
+                                           </div> 
+                                        </a>
+                                    </li>
+                                    <li class="item-product">
+                                        <a href="">
+                                           <img src="./assets/img-products/img-product-Rubik-2x2x2/product4.jpg" alt="" class="img-item-product">
+                                           <h3>Rubik QiYi MS 2x2 Magnetic Stickerless có nam châm (SP006067)</h3>
+                                           <div class="price-item-product">
+                                                <strong>150.000₫</strong>
+                                                <span></span>
+                                           </div> 
+                                        </a>
+                                    </li>
+                                    <li class="item-product">
+                                        <a href="">
+                                           <img src="./assets/img-products/img-product-Rubik-2x2x2/product5.jpg" alt="" class="img-item-product">
+                                           <h3>Rubik GAN 14 Maglev UV 3x3 có nam châm cao cấp nhất 2023 chính hãng</h3>
+                                           <div class="price-item-product">
+                                                <strong>1.600.000₫</strong>
+                                                <span>1.800.000₫</span>
+                                           </div> 
+                                        </a>
+                                    </li>
+                                    <li class="item-product">
+                                        <a href="">
+                                           <img src="./assets/img-products/img-product-Rubik-2x2x2/product6.jpg" alt="" class="img-item-product">
+                                           <h3>Rubik YJ MGC 2x2 M stickerless có nam châm - SP005025</h3>
+                                           <div class="price-item-product">
+                                                <strong>220.000₫</strong>
+                                                <span>330.000₫</span>
+                                           </div> 
+                                        </a>
+                                    </li>
+                                    <li class="item-product">
+                                        <a href="">
+                                           <img src="./assets/img-products/img-product-Rubik-2x2x2/product7.jpg" alt="" class="img-item-product">
+                                           <h3>Rubik YJ MGC 2x2 Stickerless có nam châm (SP004171)</h3>
+                                           <div class="price-item-product">
+                                                <strong>220.000₫</strong>
+                                                <span>320.000₫</span>
+                                           </div> 
+                                        </a>
+                                    </li>
+                                    <li class="item-product">
+                                        <a href="">
+                                           <img src="./assets/img-products/img-product-Rubik-2x2x2/product8.jpg" alt="" class="img-item-product">
+                                           <h3>Rubik Mofangjiaoshi Meilong 2x2x2 Black - SP005836</h3>
+                                           <div class="price-item-product">
+                                                <strong>100.000₫</strong>
+                                                <span>200.000₫</span>
+                                           </div> 
+                                        </a>
+                                    </li>
+                                    <li class="item-product">
+                                        <a href="">
+                                           <img src="./assets/img-products/img-product-Rubik-2x2x2/product9.jpg" alt="" class="img-item-product">
+                                           <h3>Rubik MoYu Meilong 2x2 M Stickerless có nam châm (SP006075)</h3>
+                                           <div class="price-item-product">
+                                                <strong>150.000₫</strong>
+                                                <span></span>
+                                           </div> 
+                                        </a>
+                                    </li>
+                                    <li class="item-product">
+                                        <a href="">
+                                           <img src="./assets/img-products/img-product-Rubik-2x2x2/product10.jpg" alt="" class="img-item-product">
+                                           <h3>Rubik QiYi MS 2x2 Magnetic Black có nam châm (SP006066)</h3>
+                                           <div class="price-item-product">
+                                                <strong>150.000₫</strong>
+                                                <span></span>
+                                           </div> 
+                                        </a>
+                                    </li>
+                                    <li class="item-product">
+                                        <a href="">
+                                           <img src="./assets/img-products/img-product-Rubik-2x2x2/product11.jpg" alt="" class="img-item-product">
+                                           <h3>Rubik Mofangjiaoshi Meilong 2x2x2 Stickerless - SP005837</h3>
+                                           <div class="price-item-product">
+                                                <strong>100.000₫</strong>
+                                                <span></span>
+                                           </div> 
+                                        </a>
+                                    </li>
+                                    <li class="item-product">
+                                        <a href="">
+                                           <img src="./assets/img-products/img-product-Rubik-2x2x2/product12.jpg" alt="" class="img-item-product">
+                                           <h3>Rubik QiYi QiDi S 2x2 stickerless(SP000325)</h3>
+                                           <div class="price-item-product">
+                                                <strong>100.000₫</strong>
+                                                <span></span>
+                                           </div> 
+                                        </a>
+                                    </li>
+                                    <li class="item-product">
+                                        <a href="">
+                                           <img src="./assets/img-products/img-product-Rubik-2x2x2/product13.jpg" alt="" class="img-item-product">
+                                           <h3>Rubik MoYu Meilong 2x2 M Black có nam châm</h3>
+                                           <div class="price-item-product">
+                                                <strong>100.000₫</strong>
+                                                <span></span>
+                                           </div> 
+                                        </a>
+                                    </li>
+                                    <li class="item-product">
+                                        <a href="">
+                                           <img src="./assets/img-products/img-product-Rubik-2x2x2/product14.jpg" alt="" class="img-item-product">
+                                           <h3>Rubik YuXin Little Magic 2x2 M Stickerless có nam châm - SP005961</h3>
+                                           <div class="price-item-product">
+                                                <strong>150.000₫</strong>
+                                                <span>250.000₫</span>
+                                           </div> 
+                                        </a>
+                                    </li>
+                                    <li class="item-product">
+                                        <a href="">
+                                           <img src="./assets/img-products/img-product-Rubik-2x2x2/product15.jpg" alt="" class="img-item-product">
+                                           <h3>Rubik QiYi Valk 2 LM 2x2x2 Black - SP005654</h3>
+                                           <div class="price-item-product">
+                                                <strong>380.000₫</strong>
+                                                <span>400.000₫</span>
+                                           </div> 
+                                        </a>
+                                    </li>
+                                    <li class="item-product">
+                                        <a href="">
+                                           <img src="./assets/img-products/img-product-Rubik-2x2x2/product16.jpg" alt="" class="img-item-product">
+                                           <h3>Rubik QiYi QiDi 2x2(SP000354)</h3>
+                                           <div class="price-item-product">
+                                                <strong>100.000₫</strong>
+                                                <span>200.000₫</span>
+                                           </div> 
+                                        </a>
+                                    </li>
+                                    <li class="item-product">
+                                        <a href="">
+                                           <img src="./assets/img-products/img-product-Rubik-2x2x2/product17.jpg" alt="" class="img-item-product">
+                                           <h3>Rubik GAN 249 V2 - SP002812</h3>
+                                           <div class="price-item-product">
+                                                <strong>280.000₫</strong>
+                                                <span>375.000₫</span>
+                                           </div> 
+                                        </a>
+                                    </li>
+                                    <li class="item-product">
+                                        <a href="">
+                                           <img src="./assets/img-products/img-product-Rubik-2x2x2/product18.jpg" alt="" class="img-item-product">
+                                           <h3>Rubik GAN 249 V2 stickerless  (SP003285)</h3>
+                                           <div class="price-item-product">
+                                                <strong>280.000₫</strong>
+                                                <span></span>
+                                           </div> 
+                                        </a>
+                                    </li>
+                                    <li class="item-product">
+                                        <a href="">
+                                           <img src="./assets/img-products/img-product-Rubik-2x2x2/product19.jpg" alt="" class="img-item-product">
+                                           <h3>Rubik QiYi Valk 2 M 2x2x2 stickerless - SP004496</h3>
+                                           <div class="price-item-product">
+                                                <strong>360.000₫</strong>
+                                                <span></span>
+                                           </div> 
+                                        </a>
+                                    </li>
+                                    <li class="item-product">
+                                        <a href="">
+                                           <img src="./assets/img-products/img-product-Rubik-2x2x2/product20.jpg" alt="" class="img-item-product">
+                                           <h3>YuXin Little Magic 2x2 stickerless - SP003713</h3>
+                                           <div class="price-item-product">
+                                                <strong>499.000₫</strong>
+                                                <span>650.000₫</span>
+                                           </div> 
+                                        </a>
+                                    </li>
+                                </ul>                        
+                            </div>
+
+                        </div>
+
+                        <div class="all__section-container-btn">
+                            <div class="all__section-btn">
+                                <a href="">Xem thêm 10 Rubik 2x2x2</a>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+
+                
+            </div>
+             <!-- -----------------------------------------------------------------------FOOTER ------------------------------------------------------------------------>
+            <div id="all-contact" class="footer">
+                <div class="footer__left">
+                    <p><strong>CÔNG TY TNHH RUBIK OCEAN VIỆT NAM</strong></p>
+                    <p>Hotline: <strong>0344665810</strong></p>
+                    <p>Tel : 02466863684 - 0836561578 - 0903244145</p>
+                    <p><strong>-Hà Nội</strong>: Tầng 6, Ocean Kids-Royal Tea, Số 6 Dương Đình Nghệ, Cầu Giấy, Hà Nội</p>
+                    <p><strong>-Hưng Yên</strong>: Trịnh Mỹ, Ngô Quyền, Tiên Lữ, Hưng Yên</p>
+                    <p>Email: linh3789@gmail.com</p>
+                    <p>GPKD số 0106475927 do Sở Kế hoạch đầu tư Hà Nội cấp ngày 06/03/2014 - MST: 0106475927</p>
+                    <li class="social-link">
+                        <a class="a-img-contact" href="">
+                            <img class="img-contact" src="./assets/img/facebook.png" alt="">
+                        </a>
+                        <a class="a-img-contact" href="">
+                            <img class="img-contact" src="./assets/img/messager.png" alt="">
+                        </a>
+                        <a class="a-img-contact" href="">
+                            <img class="img-contact" src="./assets/img/zalo.png" alt="">
+                        </a>
+                        <a class="a-img-contact" href="">
+                            <img class="img-contact" src="./assets/img/youtube.png" alt="">
+                        </a>
+                        <a class="a-img-payment" href="">
+                            <img class="img-payment" src="./assets/img/payment.png" alt="">
+                        </a>
+                    </li>
+                </div>
+    
+
+                <div class="footer__middle">
+                    <ul>
+                        <li id="footer__middle-title">Thông Tin Công Ty</li>
+                        <li><a href="">Chính sách bảo mật thông tin</a></li>
+                        <li><a href="">Giới thiệu</a></li>
+                        <li><a href="">Điều khoản sử dụng</a></li>
+                        <li><a href="">Trung tâm bảo hành</a></li>
+                        <li><a href="">Liên hệ, góp ý</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer__right">
+                    <ul>
+                        <li id="footer__middle-title">Hỗ trợ khách hàng</li>
+                        <li><a href="">Chính sách đổi trả hàng</a></li>
+                        <li><a href="">Chính sách bảo hành</a></li>
+                        <li><a href="">Phương thức thanh toán</a></li>
+                        <li><a href="">Giao nhận và vận chuyển</a></li>
+                        <li><a href="">Câu hỏi thường gặp</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- -------------------------------------------------------------------------SUPPORT---------------------------------------------------------------------------- -->
+
+        <div id="support">
+            <a class="a-img-support" title="Fanpage" href="">
+                <img id="icon-support-fb" class="img-support" src="./assets/img/facebook.png" alt="">
+            </a>
+            <a class="a-img-support" title="Chat Messenger" href="">
+                <img id="icon-support-msg" class="img-support" src="./assets/img/messager.png" alt="">
+            </a>
+            <a class="a-img-support" title="Chat Zalo" href="">
+                <img id="icon-support-zl" class="img-support" src="./assets/img/zalo.png" alt="">
+            </a>
+        </div>
+
+        <a href="#app" rel="nofollow" id="back-top" title="Lên đầu trang" style="display: none;">↑</a>
+
+        
+        
+    </body>
+</html>
