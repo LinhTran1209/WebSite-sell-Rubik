@@ -16,4 +16,4 @@ Some main html pages:
 
 ![cart html](https://github.com/LinhTran1209/WebSite-sell-Rubik/assets/143068570/bae5a51a-9215-44e3-8801-45eb613fb523)
 
-*Link*: [http://www.linhrubik3789az.somee.com/index.html]
+*Link*: http://www.linhrubik3789az.somee.com/index.html
